@@ -1,0 +1,27 @@
+<div class="galeria">
+    <button class="boton-navegacion" (click)="retroceder()">Anterior</button>
+    <div class="imagen" *ngFor="let i of [0, 1, 2, 3, 4, 5]; let j = index" [style.background-image]="'url(' + imagenes[(indiceInicial + j) % imagenes.length] + ')'" [ngClass]="{'imagen-actual': j === 0}">
+    </div>
+    <button class="boton-navegacion" (click)="avanzar()">Siguiente</button>
+  </div>
+  
+  <div class="galeria">
+    <button class="boton-navegacion" (click)="retroceder()">Anterior</button>
+    <div class="imagen" *ngFor="let i of [0, 1, 2, 3, 4, 5]; let j = index" [style.background-image]="'url(' + imagenes[(indiceInicial + j) % imagenes.length] + ')'" [ngClass]="{'imagen-actual': j === 0}">
+    </div>
+    <button class="boton-navegacion" (click)="avanzar()">Siguiente</button>
+  </div>
+
+  <div class="galeria">
+    <button class="boton-navegacion" (click)="retroceder()">Anterior</button>
+    <div class="imagen" *ngFor="let i of [0, 1, 2, 3, 4, 5]; let j = index" [style.background-image]="'url(' + imagenes[(indiceInicial + j) % imagenes.length] + ')'" [ngClass]="{'imagen-actual': j === 0}">
+    </div>
+    <button class="boton-navegacion" (click)="avanzar()">Siguiente</button>
+  </div>
+  
+  <div class="galeria">
+    <button class="boton-navegacion" (click)="retroceder()">Anterior</button>
+    <div class="imagen" *ngFor="let i of [0, 1, 2, 3, 4, 5]; let j = index" [style.background-image]="'url(' + imagenes[(indiceInicial + j) % imagenes.length] + ')'" [ngClass]="{'imagen-actual': j === 0}">
+    </div>
+    <button class="boton-navegacion" (click)="avanzar()">Siguiente</button>
+  </div>

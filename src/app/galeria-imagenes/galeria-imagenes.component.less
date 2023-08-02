@@ -1,0 +1,25 @@
+.boton-navegacion {
+  border: none;
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente la galería */
+    max-width: 1000px; /* Ajusta el ancho máximo de la galería */
+    margin: 100px auto; /* Centra la galería en la página */
+    flex-wrap: nowrap; /* Evita que las imágenes se ajusten a otra línea */
+}
+  
+.imagen {
+    flex: 0 0 calc(20% - 20px); /* Establece el ancho de cada imagen para mostrar 5 imágenes en una fila */
+    height: 150px; /* Establece la altura deseada para las imágenes */
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}

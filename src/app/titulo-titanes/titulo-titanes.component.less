@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.titulo {
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0; /* Ajusta el valor de top según tus necesidades */
+  left: 0;
+  right: 0;
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 48px;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000; /* Asegura que el título se muestre por encima del contenido */
+}
+
+  .chispa {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: saltar-chispa 1s linear infinite;
+  }
+  
+  @keyframes saltar-chispa {
+    0% {
+      transform: translateY(0) scale(1.5);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
